@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336022DF6CE85C1D64714047 /* Pods_PushSDKTester_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */; };
+		F382527C237E97570079F0BE /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F382527B237E97570079F0BE /* PushSDK_EWP.framework */; };
 		F395C4CF2375A12A007355AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4CE2375A12A007355AC /* AppDelegate.swift */; };
 		F395C4D12375A12A007355AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4D02375A12A007355AC /* SceneDelegate.swift */; };
 		F395C4D32375A12A007355AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4D22375A12A007355AC /* ViewController.swift */; };
 		F395C4D62375A12A007355AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D42375A12A007355AC /* Main.storyboard */; };
 		F395C4D82375A12C007355AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D72375A12C007355AC /* Assets.xcassets */; };
 		F395C4DB2375A12C007355AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D92375A12C007355AC /* LaunchScreen.storyboard */; };
+		F395C4E32375A20D007355AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F395C4E22375A20D007355AC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F33CC339D47DB196B97634D /* Pods-PushSDKTester_EWP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushSDKTester_EWP.debug.xcconfig"; path = "Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP.debug.xcconfig"; sourceTree = "<group>"; };
+		47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushSDKTester_EWP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5956A18DDCB74F8E2006264C /* Pods-PushSDKTester_EWP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushSDKTester_EWP.release.xcconfig"; path = "Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP.release.xcconfig"; sourceTree = "<group>"; };
+		F382527B237E97570079F0BE /* PushSDK_EWP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PushSDK_EWP.framework; sourceTree = "<group>"; };
 		F395C4CB2375A12A007355AC /* PushSDKTester_EWP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushSDKTester_EWP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F395C4CE2375A12A007355AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F395C4D02375A12A007355AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		F395C4D72375A12C007355AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F395C4DA2375A12C007355AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F395C4DC2375A12C007355AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F395C4E22375A20D007355AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F395C4E42375A258007355AC /* PushSDKTester_EWP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushSDKTester_EWP.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F382527C237E97570079F0BE /* PushSDK_EWP.framework in Frameworks */,
+				336022DF6CE85C1D64714047 /* Pods_PushSDKTester_EWP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8E73ABF334E4EA06D7942DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F382527B237E97570079F0BE /* PushSDK_EWP.framework */,
+				47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6729CA53C49C6C4EAC87E7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F33CC339D47DB196B97634D /* Pods-PushSDKTester_EWP.debug.xcconfig */,
+				5956A18DDCB74F8E2006264C /* Pods-PushSDKTester_EWP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F395C4C22375A12A007355AC = {
 			isa = PBXGroup;
 			children = (
 				F395C4CD2375A12A007355AC /* PushSDKTester_EWP */,
 				F395C4CC2375A12A007355AC /* Products */,
+				E6729CA53C49C6C4EAC87E7E /* Pods */,
+				A8E73ABF334E4EA06D7942DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +87,7 @@
 		F395C4CD2375A12A007355AC /* PushSDKTester_EWP */ = {
 			isa = PBXGroup;
 			children = (
+				F395C4E42375A258007355AC /* PushSDKTester_EWP.entitlements */,
 				F395C4CE2375A12A007355AC /* AppDelegate.swift */,
 				F395C4D02375A12A007355AC /* SceneDelegate.swift */,
 				F395C4D22375A12A007355AC /* ViewController.swift */,
@@ -63,6 +95,7 @@
 				F395C4D72375A12C007355AC /* Assets.xcassets */,
 				F395C4D92375A12C007355AC /* LaunchScreen.storyboard */,
 				F395C4DC2375A12C007355AC /* Info.plist */,
+				F395C4E22375A20D007355AC /* GoogleService-Info.plist */,
 			);
 			path = PushSDKTester_EWP;
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F395C4DF2375A12C007355AC /* Build configuration list for PBXNativeTarget "PushSDKTester_EWP" */;
 			buildPhases = (
+				71BB456D47FBD354847A8A46 /* [CP] Check Pods Manifest.lock */,
 				F395C4C72375A12A007355AC /* Sources */,
 				F395C4C82375A12A007355AC /* Frameworks */,
 				F395C4C92375A12A007355AC /* Resources */,
+				B56AFCB7D204F6D4647517FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +161,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				F395C4DB2375A12C007355AC /* LaunchScreen.storyboard in Resources */,
+				F395C4E32375A20D007355AC /* GoogleService-Info.plist in Resources */,
 				F395C4D82375A12C007355AC /* Assets.xcassets in Resources */,
 				F395C4D62375A12A007355AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71BB456D47FBD354847A8A46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushSDKTester_EWP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B56AFCB7D204F6D4647517FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F395C4C72375A12A007355AC /* Sources */ = {
@@ -282,16 +360,23 @@
 		};
 		F395C4E02375A12C007355AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F33CC339D47DB196B97634D /* Pods-PushSDKTester_EWP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushSDKTester_EWP/PushSDKTester_EWP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJC4688N2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PushSDKTester_EWP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sparrowapps.PushSDKTester-EWP";
+				PRODUCT_BUNDLE_IDENTIFIER = iotisys.pushsdk.iostester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,16 +385,23 @@
 		};
 		F395C4E12375A12C007355AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5956A18DDCB74F8E2006264C /* Pods-PushSDKTester_EWP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushSDKTester_EWP/PushSDKTester_EWP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJC4688N2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PushSDKTester_EWP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sparrowapps.PushSDKTester-EWP";
+				PRODUCT_BUNDLE_IDENTIFIER = iotisys.pushsdk.iostester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

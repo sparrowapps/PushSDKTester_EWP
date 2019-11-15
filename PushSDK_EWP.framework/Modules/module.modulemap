@@ -1,0 +1,11 @@
+framework module PushSDK_EWP {
+  umbrella header "PushSDK_EWP.h"
+
+  export *
+  module * { export * }
+}
+
+module PushSDK_EWP.Swift {
+    header "PushSDK_EWP-Swift.h"
+    requires objc
+}
