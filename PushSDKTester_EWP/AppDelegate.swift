@@ -8,13 +8,18 @@
 
 import UIKit
 import Firebase
-import PushSDK_EWP
+
+//import PushSDK_EWP
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let gcmMessageIDKey = "gcm.message_id"
-    var pushsdk : PushSDK_EWP?
+    var fcmToken : String?
+
+//    var pushsdk : PushSDK_EWP?
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -43,11 +48,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerForRemoteNotifications()
 
         // [END register_for_notifications]
-        
-        pushsdk = PushSDK_EWP()
-        //_ = pushsdk?.pushapiCreate(appId: "iotisys.pushsdk.iostester", deviceId: "4")
-        _ = pushsdk?.pushapiCreate(appId: "iotisys.pushsdk.iostester", deviceId: "4", serverIP: "1.2.3.4", serverPort: 1234)
-        
+
+// SDK 초기화
+//        pushsdk = PushSDK_EWP()
+//        //_ = pushsdk?.pushapiCreate(appId: "iotisys.pushsdk.iostester", deviceId: "4")
+//        _ = pushsdk?.pushapiCreate(appId: "iotisys.pushsdk.iostester", deviceId: "4", serverIP: "1.2.3.4", serverPort: 1234)
+
         return true
     }
     
@@ -152,19 +158,20 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
     // Print full message.
     print(userInfo)
     
-    _ = pushsdk?.pushapiReqPushMessageInfo(msgType: PushSDK_EWP.MessageType.messageTypeCommon, msgId: "4", callback: { (error, msgtype, messageInfo) in
-        print(error)
-        if msgtype == PushSDK_EWP.MessageType.messageTypeCommon {
-            print("common msg")
-        } else {
-            print("notice msg")
-        }
-        
-        let msgInfo = messageInfo
-        print(msgInfo.id)
-        print(msgInfo.title)
-        print(msgInfo.content)
-    })
+// 메시지 정보 얻기
+//    _ = pushsdk?.pushapiReqPushMessageInfo(msgType: PushSDK_EWP.MessageType.messageTypeCommon, msgId: "4", callback: { (error, msgtype, messageInfo) in
+//        print(error)
+//        if msgtype == PushSDK_EWP.MessageType.messageTypeCommon {
+//            print("common msg")
+//        } else {
+//            print("notice msg")
+//        }
+//
+//        let msgInfo = messageInfo
+//        print(msgInfo.id)
+//        print(msgInfo.title)
+//        print(msgInfo.content)
+//    })
     
     completionHandler()
   }
@@ -181,9 +188,11 @@ extension AppDelegate : MessagingDelegate {
     // TODO: If necessary send token to application server.
     // Note: This callback is fired at each app startup and whenever a new token is generated.
     
-    _ = pushsdk?.pushapiReqRegistraton(regId: fcmToken, callback: { (error) in
-        print(error)
-    })
+// fcmToken 으로 pushapiReqRegistration을 수행한다.
+//    _ = pushsdk?.pushapiReqRegistraton(regId: fcmToken, callback: { (error) in
+//        print(error)
+//    })
+    self.fcmToken = fcmToken
     
   }
   // [END refresh_token]
