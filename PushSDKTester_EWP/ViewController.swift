@@ -74,7 +74,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
     @IBAction func createClick(_ sender: Any) {
         let res = pushsdk?.pushapiCreate(
             appId: "iotisys.pushsdk.iostester",
@@ -109,18 +108,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 DispatchQueue.main.async {
                     let msg = msgInfo
                     
-                    self.appendLogTextView("pushapiReqPushMessageInfo error \(error)")
-                    self.appendLogTextView("pushapiReqPushMessageInfo msgtype \(msgtype)")
-                    self.appendLogTextView("id \(msg.id)")
-                    self.appendLogTextView("labelCode \(msg.labelCode)")
-                    self.appendLogTextView("readStatus \(msg.readStatus)")
-                    self.appendLogTextView("date \(msg.date)")
-                    self.appendLogTextView("title \(msg.title)")
-                    self.appendLogTextView("content \(msg.content)")
+                    self.appendLogTextView("error=\(error)")
+                    self.appendLogTextView("msgtype=\(msgtype)")
+                    self.appendLogTextView("id=\(msg.id)")
+                    self.appendLogTextView("labelCode=\(msg.labelCode)")
+                    self.appendLogTextView("readStatus=\(msg.readStatus)")
+                    self.appendLogTextView("date=\(msg.date)")
+                    self.appendLogTextView("title=\(msg.title)")
+                    self.appendLogTextView("content=\(msg.content)")
                 }
         })
         self.appendLogTextView("pushapiReqPushMessageInfo res \(String(describing: res))")
-        
     }
     
     @IBAction func countClick(_ sender: Any) {
@@ -142,17 +140,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
             count: count ?? 0,
             callback: { (error, msgType, chunkIndex, count, msgArray) in
                 DispatchQueue.main.async {
-                    self.appendLogTextView("pushapiReqMessageList error \(error)")
-                    self.appendLogTextView("pushapiReqMessageList msgType \(msgType)")
-                    self.appendLogTextView("pushapiReqMessageList chunkIndex \(chunkIndex)")
-                    self.appendLogTextView("pushapiReqMessageList count \(count)")
+                    self.appendLogTextView("error=\(error)")
+                    self.appendLogTextView("msgType=\(msgType)")
+                    self.appendLogTextView("chunkIndex=\(chunkIndex)")
+                    self.appendLogTextView("count=\(count)")
                     for msg in msgArray {
-                        self.appendLogTextView("id \(msg.id)")
-                        self.appendLogTextView("labelCode \(msg.labelCode)")
-                        self.appendLogTextView("readStatus \(msg.readStatus)")
-                        self.appendLogTextView("date \(msg.date)")
-                        self.appendLogTextView("title \(msg.title)")
-                        self.appendLogTextView("content \(msg.content)")
+                        self.appendLogTextView("id=\(msg.id)")
+                        self.appendLogTextView("labelCode=\(msg.labelCode)")
+                        self.appendLogTextView("readStatus=\(msg.readStatus)")
+                        self.appendLogTextView("date=\(msg.date)")
+                        self.appendLogTextView("title=\(msg.title)")
+                        self.appendLogTextView("content=\(msg.content)")
                     }
                 }
         })
@@ -165,9 +163,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             msgId: msgId!,
             callback: { (error, msgType, msgId) in
                 DispatchQueue.main.async {
-                    self.appendLogTextView("pushapiReqMessageRead error \(error)")
-                    self.appendLogTextView("pushapiReqMessageRead msgType \(msgType)")
-                    self.appendLogTextView("pushapiReqMessageRead msgId \(msgId)")
+                    self.appendLogTextView("error=\(error)")
+                    self.appendLogTextView("msgType=\(msgType)")
+                    self.appendLogTextView("msgId=\(msgId)")
                 }
         })
         self.appendLogTextView("pushapiReqMessageRead res \(String(describing: res))")
@@ -178,24 +176,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
             msgId: msgId!,
             callback: { (error, msgId) in
                 DispatchQueue.main.async {
-                    self.appendLogTextView("pushapiReqNoticeDelete error \(error)")
-                    self.appendLogTextView("pushapiReqNoticeDelete msgId \(msgId)")
+                    self.appendLogTextView("error=\(error)")
+                    self.appendLogTextView("msgId=\(msgId)")
                 }
         })
         self.appendLogTextView("pushapiReqNoticeDelete res \(String(describing: res))")
     }
     
-    
     @IBAction func versionClick(_ sender: Any) {
         let res = pushsdk?.pushapiVersion()
-        appendLogTextView("pushapiVersion \(String(describing: res))")
+        appendLogTextView("pushapiVersion=\(String(describing: res))")
     }
-    
     
     @IBAction func clearLogButtonClick(_ sender: Any) {
         logTextView.text = ""
     }
-    
-    
 }
 
