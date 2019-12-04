@@ -43,6 +43,30 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.addGestureRecognizer(tapGesture)
         pushsdk = PushSDK_EWP()
         textFieldAssign()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(pushMessageReceive(_:)), name: NSNotification.Name("PushMessageReceive"), object: nil)
+        
+    }
+    
+    @objc func pushMessageReceive(_ notification: Notification) {
+        if let data = notification.userInfo as? [String:Int] {
+            for (msgId, msgType) in data {
+                
+                if msgType == 0 {
+                    msgTypeSegmentedControl.selectedSegmentIndex = 0
+                    self.msgType = PushSDK_EWP.MessageType.messageTypeCommon
+                } else {
+                    msgTypeSegmentedControl.selectedSegmentIndex = 1
+                    self.msgType = PushSDK_EWP.MessageType.messageTypeNotice
+                }
+                
+                self.msgId = msgId
+                messageIdTextField.text = msgId
+            }
+            self.messageInfoClick(self)
+            
+        }
+        
     }
     
     fileprivate func textFieldAssign() {

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		336022DF6CE85C1D64714047 /* Pods_PushSDKTester_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */; };
-		F33F630423968EA000E2921A /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33F630223968E9900E2921A /* PushSDK_EWP.framework */; };
-		F33F630523968EA000E2921A /* PushSDK_EWP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F33F630223968E9900E2921A /* PushSDK_EWP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F395C4CF2375A12A007355AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4CE2375A12A007355AC /* AppDelegate.swift */; };
 		F395C4D12375A12A007355AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4D02375A12A007355AC /* SceneDelegate.swift */; };
 		F395C4D32375A12A007355AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4D22375A12A007355AC /* ViewController.swift */; };
@@ -17,6 +15,8 @@
 		F395C4D82375A12C007355AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D72375A12C007355AC /* Assets.xcassets */; };
 		F395C4DB2375A12C007355AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D92375A12C007355AC /* LaunchScreen.storyboard */; };
 		F395C4E32375A20D007355AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F395C4E22375A20D007355AC /* GoogleService-Info.plist */; };
+		F3EAEE6E23979A6F005D2E4F /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EAEE6C239799EC005D2E4F /* PushSDK_EWP.framework */; };
+		F3EAEE6F23979A6F005D2E4F /* PushSDK_EWP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3EAEE6C239799EC005D2E4F /* PushSDK_EWP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F33F630523968EA000E2921A /* PushSDK_EWP.framework in Embed Frameworks */,
+				F3EAEE6F23979A6F005D2E4F /* PushSDK_EWP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +37,6 @@
 		2F33CC339D47DB196B97634D /* Pods-PushSDKTester_EWP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushSDKTester_EWP.debug.xcconfig"; path = "Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP.debug.xcconfig"; sourceTree = "<group>"; };
 		47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushSDKTester_EWP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5956A18DDCB74F8E2006264C /* Pods-PushSDKTester_EWP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushSDKTester_EWP.release.xcconfig"; path = "Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP.release.xcconfig"; sourceTree = "<group>"; };
-		F33F630223968E9900E2921A /* PushSDK_EWP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PushSDK_EWP.framework; sourceTree = "<group>"; };
 		F395C4CB2375A12A007355AC /* PushSDKTester_EWP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushSDKTester_EWP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F395C4CE2375A12A007355AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F395C4D02375A12A007355AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		F395C4DC2375A12C007355AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F395C4E22375A20D007355AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F395C4E42375A258007355AC /* PushSDKTester_EWP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushSDKTester_EWP.entitlements; sourceTree = "<group>"; };
+		F3EAEE6C239799EC005D2E4F /* PushSDK_EWP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PushSDK_EWP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33F630423968EA000E2921A /* PushSDK_EWP.framework in Frameworks */,
+				F3EAEE6E23979A6F005D2E4F /* PushSDK_EWP.framework in Frameworks */,
 				336022DF6CE85C1D64714047 /* Pods_PushSDKTester_EWP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +66,7 @@
 		A8E73ABF334E4EA06D7942DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F33F630223968E9900E2921A /* PushSDK_EWP.framework */,
+				F3EAEE6C239799EC005D2E4F /* PushSDK_EWP.framework */,
 				47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */,
 			);
 			name = Frameworks;

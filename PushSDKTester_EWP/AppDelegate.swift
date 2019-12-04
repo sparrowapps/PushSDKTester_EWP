@@ -143,7 +143,8 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
     print(userInfo)
 
     // Change this to your preferred presentation option
-    completionHandler([])
+    //completionHandler([])
+    completionHandler([.alert, .badge, .sound])
   }
 
   func userNotificationCenter(_ center: UNUserNotificationCenter,
@@ -158,20 +159,12 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
     // Print full message.
     print(userInfo)
     
-// 메시지 정보 얻기
-//    _ = pushsdk?.pushapiReqPushMessageInfo(msgType: PushSDK_EWP.MessageType.messageTypeCommon, msgId: "4", callback: { (error, msgtype, messageInfo) in
-//        print(error)
-//        if msgtype == PushSDK_EWP.MessageType.messageTypeCommon {
-//            print("common msg")
-//        } else {
-//            print("notice msg")
-//        }
-//
-//        let msgInfo = messageInfo
-//        print(msgInfo.id)
-//        print(msgInfo.title)
-//        print(msgInfo.content)
-//    })
+    print(userInfo["msgId"] as Any)
+    print(userInfo["msgType"] as Any)
+    
+    let data : [String:Int] = [userInfo["msgId"] as! String: Int(userInfo["msgType"] as! String)!]
+    
+    NotificationCenter.default.post(name: Notification.Name("PushMessageReceive"), object: nil, userInfo: data)
     
     completionHandler()
   }
@@ -212,8 +205,10 @@ extension AppDelegate : MessagingDelegate {
          "body": "WORLD"
      },
      "data": {
-         "openURL": "https://m.naver.com"
+         "msgType": "0",
+         "msgId":"1190515132700800709930"
+ 
      },
-     "to": "fulBR5lVYXA:APA91bGlUBNihuz9LM3uO4GfXnQgYj0pNHEk3eo_TUQhDIM_-9yUA_m7pqSXPTldW1MP39Y2wbBU9NIUhqCGQgeR-2eWsK60kP2dry8lxLaBP0IQjectyV_ARjE1DVdDQAHc5RGB0ISI"
+     "to": "dIqc8MH-lCw:APA91bF5J6WmwMHzhRFtVHH-XrwFJBPqfaYhuR6_lrtQooTssviVN2kDDWcoeNDqMoonegchBeCLcHrQyoptst17rCGDSOF5s3w4jYNJ8AJMOELhbNZCUPkldKt-OkaCgX6_ujK3CI06"
  }'
  */
