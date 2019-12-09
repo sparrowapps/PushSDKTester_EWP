@@ -141,6 +141,16 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
 
     // Print full message.
     print(userInfo)
+    
+    print(userInfo)
+    
+    print(userInfo["msgId"] as Any)
+    print(userInfo["msgType"] as Any)
+    
+    let data : [String:Int] = [userInfo["msgId"] as! String: Int(userInfo["msgType"] as! String)!]
+    
+    NotificationCenter.default.post(name: Notification.Name("PushMessageReceive"), object: nil, userInfo: data)
+
 
     // Change this to your preferred presentation option
     //completionHandler([])

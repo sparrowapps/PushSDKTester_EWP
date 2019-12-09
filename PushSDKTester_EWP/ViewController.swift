@@ -45,7 +45,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textFieldAssign()
         
         NotificationCenter.default.addObserver(self, selector: #selector(pushMessageReceive(_:)), name: NSNotification.Name("PushMessageReceive"), object: nil)
-        
     }
     
     @objc func pushMessageReceive(_ notification: Notification) {
@@ -62,6 +61,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 self.msgId = msgId
                 messageIdTextField.text = msgId
+                self.appendLogTextView("msgtype=\(self.msgType)")
+                self.appendLogTextView("msgId=\(msgId)")
             }
             self.messageInfoClick(self)
             
@@ -119,6 +120,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     }
             })
             appendLogTextView("pushapiReqRegistraton res : \(String(describing: res))")
+            appendLogTextView("fcmToken : \(fcmToken)")
         } else {
             appendLogTextView("pushapiReqRegistraton fcmToken nil)")
         }
