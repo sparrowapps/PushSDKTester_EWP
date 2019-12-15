@@ -9,3 +9,7 @@ module PushSDK_EWP.Swift {
     header "PushSDK_EWP-Swift.h"
     requires objc
 }
+
+module pushapi_ewp {
+     export *
+}

@@ -15,8 +15,7 @@
 		F395C4D82375A12C007355AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D72375A12C007355AC /* Assets.xcassets */; };
 		F395C4DB2375A12C007355AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D92375A12C007355AC /* LaunchScreen.storyboard */; };
 		F395C4E32375A20D007355AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F395C4E22375A20D007355AC /* GoogleService-Info.plist */; };
-		F3FEF7B323A652E1009CE883 /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FEF7B123A652DD009CE883 /* PushSDK_EWP.framework */; };
-		F3FEF7B423A652E1009CE883 /* PushSDK_EWP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3FEF7B123A652DD009CE883 /* PushSDK_EWP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3FEF7B623A654EC009CE883 /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FEF7B523A654EC009CE883 /* PushSDK_EWP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F3FEF7B423A652E1009CE883 /* PushSDK_EWP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +46,7 @@
 		F395C4E22375A20D007355AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F395C4E42375A258007355AC /* PushSDKTester_EWP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushSDKTester_EWP.entitlements; sourceTree = "<group>"; };
 		F3A9FD772399154C006236EF /* PushSDKTester_EWP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PushSDKTester_EWP-Bridging-Header.h"; sourceTree = "<group>"; };
-		F3FEF7B123A652DD009CE883 /* PushSDK_EWP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PushSDK_EWP.framework; sourceTree = "<group>"; };
+		F3FEF7B523A654EC009CE883 /* PushSDK_EWP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PushSDK_EWP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3FEF7B323A652E1009CE883 /* PushSDK_EWP.framework in Frameworks */,
+				F3FEF7B623A654EC009CE883 /* PushSDK_EWP.framework in Frameworks */,
 				336022DF6CE85C1D64714047 /* Pods_PushSDKTester_EWP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +65,7 @@
 		A8E73ABF334E4EA06D7942DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F3FEF7B123A652DD009CE883 /* PushSDK_EWP.framework */,
+				F3FEF7B523A654EC009CE883 /* PushSDK_EWP.framework */,
 				47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */,
 			);
 			name = Frameworks;
