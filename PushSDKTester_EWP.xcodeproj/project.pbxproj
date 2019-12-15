@@ -15,7 +15,8 @@
 		F395C4D82375A12C007355AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D72375A12C007355AC /* Assets.xcassets */; };
 		F395C4DB2375A12C007355AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D92375A12C007355AC /* LaunchScreen.storyboard */; };
 		F395C4E32375A20D007355AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F395C4E22375A20D007355AC /* GoogleService-Info.plist */; };
-		F3FEF7B623A654EC009CE883 /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FEF7B523A654EC009CE883 /* PushSDK_EWP.framework */; };
+		F3FEF7B723A6563C009CE883 /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FEF7B523A654EC009CE883 /* PushSDK_EWP.framework */; };
+		F3FEF7B823A6563C009CE883 /* PushSDK_EWP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3FEF7B523A654EC009CE883 /* PushSDK_EWP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F3FEF7B823A6563C009CE883 /* PushSDK_EWP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3FEF7B623A654EC009CE883 /* PushSDK_EWP.framework in Frameworks */,
+				F3FEF7B723A6563C009CE883 /* PushSDK_EWP.framework in Frameworks */,
 				336022DF6CE85C1D64714047 /* Pods_PushSDKTester_EWP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
