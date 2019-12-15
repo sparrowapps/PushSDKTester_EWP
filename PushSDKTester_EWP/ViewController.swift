@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 self.msgId = msgId
                 messageIdTextField.text = msgId
-                self.appendLogTextView("msgtype=\(self.msgType)")
+                self.appendLogTextView("msgtype=\(String(describing: self.msgType))")
                 self.appendLogTextView("msgId=\(msgId)")
             }
             self.messageInfoClick(self)
@@ -113,6 +113,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if let fcmToken = appDelegate.fcmToken {
             let res = pushsdk?.pushapiReqRegistraton(
+                authKey: "AIzaSyAxqkccCWq_mX8jbJqj0iDSbnKULY5oJnI",
                 regId: fcmToken,
                 callback: { (error) in
                     DispatchQueue.main.async {
