@@ -11,5 +11,5 @@ module PushSDK_EWP.Swift {
 }
 
 module pushapi_ewp {
-     export *
+    export *
 }
