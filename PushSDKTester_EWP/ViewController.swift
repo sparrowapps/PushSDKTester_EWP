@@ -35,6 +35,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var logTextView: UITextView!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     var pushsdk : PushSDK_EWP?
     
     override func viewDidLoad() {
@@ -42,6 +44,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
         pushsdk = PushSDK_EWP()
+
+        titleLabel.text = Constants.appTitle
+        
         textFieldAssign()
         
         NotificationCenter.default.addObserver(self, selector: #selector(pushMessageReceive(_:)), name: NSNotification.Name("PushMessageReceive"), object: nil)
@@ -65,12 +70,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self.appendLogTextView("msgId=\(msgId)")
             }
             self.messageInfoClick(self)
-            
         }
-        
     }
     
     fileprivate func textFieldAssign() {
+        
+        idTextField.text = Constants.defaultID
+        ipTextField.text = Constants.ip
+        portTextField.text = Constants.port
+        messageIdTextField.text = Constants.messageId
+        
         id = idTextField.text
         ip = ipTextField.text
         port = Int(portTextField.text ?? "0")
@@ -101,7 +110,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func createClick(_ sender: Any) {
         let res = pushsdk?.pushapiCreate(
-            appId: "iotisys.pushsdk.iostester",
+            appId: Constants.appid,
             deviceId: id ?? "",
             serverIP: ip ?? "",
             serverPort: port ?? 0)
@@ -113,7 +122,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if let fcmToken = appDelegate.fcmToken {
             let res = pushsdk?.pushapiReqRegistraton(
-                authKey: "AIzaSyAxqkccCWq_mX8jbJqj0iDSbnKULY5oJnI",
+                authKey: Constants.authKey,
                 regId: fcmToken,
                 callback: { (error) in
                     DispatchQueue.main.async {

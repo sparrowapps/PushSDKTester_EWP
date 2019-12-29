@@ -23,7 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        FirebaseApp.configure()
+        #if DISASTER
+            let filePath = Bundle.main.path(forResource: "GoogleService-Info-dis", ofType: "plist")!
+            let options = FirebaseOptions(contentsOfFile: filePath)
+            FirebaseApp.configure(options: options!)
+        #else
+            let filePath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")!
+            let options = FirebaseOptions(contentsOfFile: filePath)
+            FirebaseApp.configure(options: options!)
+        #endif
         
         // [START set_messaging_delegate]
         Messaging.messaging().delegate = self
@@ -46,6 +54,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         application.registerForRemoteNotifications()
+        
+        #if DISASTER
+            print("DISASTER APPS")
+        #endif
 
         // [END register_for_notifications]
 
@@ -219,6 +231,19 @@ extension AppDelegate : MessagingDelegate {
          "msgId":"1190515132700800709930"
  
      },
-     "to": "dIqc8MH-lCw:APA91bF5J6WmwMHzhRFtVHH-XrwFJBPqfaYhuR6_lrtQooTssviVN2kDDWcoeNDqMoonegchBeCLcHrQyoptst17rCGDSOF5s3w4jYNJ8AJMOELhbNZCUPkldKt-OkaCgX6_ujK3CI06"
+     "to": "cQCLyG-ZOL0:APA91bEqu3mWebW9_0N3UUi9ULcwbQkrojufemaSezffueB6Ao2Zy3Z-z82BZjhWxZMKgr9h_i1kBDDJIZAXn85wi4Mb9FJQV9g6hh-xOxpxba9YDsCQbcfcde0zNFpa-pCrwUn0YlZ3"
+ }'
+ 
+ curl -X POST --header "Authorization:key=AAAApN-Gwy4:APA91bEBZdIhl3pdO4xPzIM3aVAiCh-Nbex9mjIVAkXwExChcKedgKEFjqyGTzGePWFsrP_w582nhUEa_zUgezB0XY71kFF046l8cXnrclq1qMCiGo4EFBlhRUm8sPCmOT1THaCaP21_" --header "Content-Type:application/json" https://fcm.googleapis.com/fcm/send -d '{
+     "notification": {
+         "title": "HELLO",
+         "body": "WORLD"
+     },
+     "data": {
+         "msgType": "0",
+         "msgId":"1190515132700800709930"
+ 
+     },
+     "to": "euLeiuKKvLI:APA91bG494MqDUDJbKMrjmyc-oPM_sC7WhM4PJuRyUef5L0RA4oKDb1ixYAciAh38nkozsDEDcHE35kVhWq9t4I2FdcJqFR8QTMHW_N9SwmoMC1LBU8G0lTTKrV9cAlZYKrlpS6YX2MX"
  }'
  */

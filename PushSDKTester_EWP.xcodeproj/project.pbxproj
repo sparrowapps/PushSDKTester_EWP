@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		336022DF6CE85C1D64714047 /* Pods_PushSDKTester_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */; };
-		F348B29823AC59C200A9B443 /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F348B29623AC59BD00A9B443 /* PushSDK_EWP.framework */; };
-		F348B29923AC59C200A9B443 /* PushSDK_EWP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F348B29623AC59BD00A9B443 /* PushSDK_EWP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F395C4CF2375A12A007355AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4CE2375A12A007355AC /* AppDelegate.swift */; };
 		F395C4D12375A12A007355AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4D02375A12A007355AC /* SceneDelegate.swift */; };
 		F395C4D32375A12A007355AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4D22375A12A007355AC /* ViewController.swift */; };
@@ -17,16 +15,42 @@
 		F395C4D82375A12C007355AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D72375A12C007355AC /* Assets.xcassets */; };
 		F395C4DB2375A12C007355AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D92375A12C007355AC /* LaunchScreen.storyboard */; };
 		F395C4E32375A20D007355AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F395C4E22375A20D007355AC /* GoogleService-Info.plist */; };
+		F399A1FC23B722D000759320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4D22375A12A007355AC /* ViewController.swift */; };
+		F399A1FD23B722D000759320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4CE2375A12A007355AC /* AppDelegate.swift */; };
+		F399A1FE23B722D000759320 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395C4D02375A12A007355AC /* SceneDelegate.swift */; };
+		F399A20123B722D000759320 /* Pods_PushSDKTester_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */; };
+		F399A20323B722D000759320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D92375A12C007355AC /* LaunchScreen.storyboard */; };
+		F399A20423B722D000759320 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F395C4E22375A20D007355AC /* GoogleService-Info.plist */; };
+		F399A20523B722D000759320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D72375A12C007355AC /* Assets.xcassets */; };
+		F399A20623B722D000759320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F395C4D42375A12A007355AC /* Main.storyboard */; };
+		F399A21023B72C3900759320 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A20F23B72C3900759320 /* Constants.swift */; };
+		F399A21123B72C4200759320 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A20F23B72C3900759320 /* Constants.swift */; };
+		F399A21423B7347900759320 /* GoogleService-Info-dis.plist in Resources */ = {isa = PBXBuildFile; fileRef = F399A21223B7332600759320 /* GoogleService-Info-dis.plist */; };
+		F3FB829923B87A46009C068B /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FB829723B87A43009C068B /* PushSDK_EWP.framework */; };
+		F3FB829A23B87A46009C068B /* PushSDK_EWP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3FB829723B87A43009C068B /* PushSDK_EWP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3FB829C23B87AB8009C068B /* PushSDK_EWP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FB829723B87A43009C068B /* PushSDK_EWP.framework */; };
+		F3FB829D23B87AB8009C068B /* PushSDK_EWP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3FB829723B87A43009C068B /* PushSDK_EWP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F399A20823B722D000759320 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3FB829D23B87AB8009C068B /* PushSDK_EWP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3AB1E032399C4A10059470C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F348B29923AC59C200A9B443 /* PushSDK_EWP.framework in Embed Frameworks */,
+				F3FB829A23B87A46009C068B /* PushSDK_EWP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,8 +61,7 @@
 		2F33CC339D47DB196B97634D /* Pods-PushSDKTester_EWP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushSDKTester_EWP.debug.xcconfig"; path = "Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP.debug.xcconfig"; sourceTree = "<group>"; };
 		47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushSDKTester_EWP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5956A18DDCB74F8E2006264C /* Pods-PushSDKTester_EWP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushSDKTester_EWP.release.xcconfig"; path = "Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP.release.xcconfig"; sourceTree = "<group>"; };
-		F348B29623AC59BD00A9B443 /* PushSDK_EWP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PushSDK_EWP.framework; sourceTree = "<group>"; };
-		F395C4CB2375A12A007355AC /* PushSDKTester_EWP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushSDKTester_EWP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F395C4CB2375A12A007355AC /* SDKTEST_OFFICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKTEST_OFFICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F395C4CE2375A12A007355AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F395C4D02375A12A007355AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F395C4D22375A12A007355AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +71,12 @@
 		F395C4DC2375A12C007355AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F395C4E22375A20D007355AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F395C4E42375A258007355AC /* PushSDKTester_EWP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushSDKTester_EWP.entitlements; sourceTree = "<group>"; };
+		F399A20D23B722D000759320 /* SDKTEST_DISASTER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKTEST_DISASTER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F399A20E23B722D100759320 /* PushSDKTester_EWP copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PushSDKTester_EWP copy-Info.plist"; path = "/Users/sparrow/Library/Mobile Documents/com~apple~CloudDocs/Documents/iOS/PushSDKTester_EWP/PushSDKTester_EWP copy-Info.plist"; sourceTree = "<absolute>"; };
+		F399A20F23B72C3900759320 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F399A21223B7332600759320 /* GoogleService-Info-dis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-dis.plist"; sourceTree = "<group>"; };
 		F3A9FD772399154C006236EF /* PushSDKTester_EWP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PushSDKTester_EWP-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3FB829723B87A43009C068B /* PushSDK_EWP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PushSDK_EWP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +84,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F348B29823AC59C200A9B443 /* PushSDK_EWP.framework in Frameworks */,
+				F3FB829923B87A46009C068B /* PushSDK_EWP.framework in Frameworks */,
 				336022DF6CE85C1D64714047 /* Pods_PushSDKTester_EWP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F399A1FF23B722D000759320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FB829C23B87AB8009C068B /* PushSDK_EWP.framework in Frameworks */,
+				F399A20123B722D000759320 /* Pods_PushSDKTester_EWP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +104,7 @@
 		A8E73ABF334E4EA06D7942DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F348B29623AC59BD00A9B443 /* PushSDK_EWP.framework */,
+				F3FB829723B87A43009C068B /* PushSDK_EWP.framework */,
 				47D13ABEEB7EE6EEFA430883 /* Pods_PushSDKTester_EWP.framework */,
 			);
 			name = Frameworks;
@@ -89,13 +126,15 @@
 				F395C4CC2375A12A007355AC /* Products */,
 				E6729CA53C49C6C4EAC87E7E /* Pods */,
 				A8E73ABF334E4EA06D7942DA /* Frameworks */,
+				F399A20E23B722D100759320 /* PushSDKTester_EWP copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		F395C4CC2375A12A007355AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F395C4CB2375A12A007355AC /* PushSDKTester_EWP.app */,
+				F395C4CB2375A12A007355AC /* SDKTEST_OFFICE.app */,
+				F399A20D23B722D000759320 /* SDKTEST_DISASTER.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +151,9 @@
 				F395C4D92375A12C007355AC /* LaunchScreen.storyboard */,
 				F395C4DC2375A12C007355AC /* Info.plist */,
 				F395C4E22375A20D007355AC /* GoogleService-Info.plist */,
+				F399A21223B7332600759320 /* GoogleService-Info-dis.plist */,
 				F3A9FD772399154C006236EF /* PushSDKTester_EWP-Bridging-Header.h */,
+				F399A20F23B72C3900759320 /* Constants.swift */,
 			);
 			path = PushSDKTester_EWP;
 			sourceTree = "<group>";
@@ -137,7 +178,27 @@
 			);
 			name = PushSDKTester_EWP;
 			productName = PushSDKTester_EWP;
-			productReference = F395C4CB2375A12A007355AC /* PushSDKTester_EWP.app */;
+			productReference = F395C4CB2375A12A007355AC /* SDKTEST_OFFICE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F399A1F923B722D000759320 /* PushSDKTester_EWP_disaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F399A20A23B722D000759320 /* Build configuration list for PBXNativeTarget "PushSDKTester_EWP_disaster" */;
+			buildPhases = (
+				F399A1FA23B722D000759320 /* [CP] Check Pods Manifest.lock */,
+				F399A1FB23B722D000759320 /* Sources */,
+				F399A1FF23B722D000759320 /* Frameworks */,
+				F399A20223B722D000759320 /* Resources */,
+				F399A20723B722D000759320 /* [CP] Embed Pods Frameworks */,
+				F399A20823B722D000759320 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushSDKTester_EWP_disaster;
+			productName = PushSDKTester_EWP;
+			productReference = F399A20D23B722D000759320 /* SDKTEST_DISASTER.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,6 +231,7 @@
 			projectRoot = "";
 			targets = (
 				F395C4CA2375A12A007355AC /* PushSDKTester_EWP */,
+				F399A1F923B722D000759320 /* PushSDKTester_EWP_disaster */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +245,18 @@
 				F395C4E32375A20D007355AC /* GoogleService-Info.plist in Resources */,
 				F395C4D82375A12C007355AC /* Assets.xcassets in Resources */,
 				F395C4D62375A12A007355AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F399A20223B722D000759320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F399A20323B722D000759320 /* LaunchScreen.storyboard in Resources */,
+				F399A20423B722D000759320 /* GoogleService-Info.plist in Resources */,
+				F399A20523B722D000759320 /* Assets.xcassets in Resources */,
+				F399A20623B722D000759320 /* Main.storyboard in Resources */,
+				F399A21423B7347900759320 /* GoogleService-Info-dis.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +302,45 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F399A1FA23B722D000759320 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushSDKTester_EWP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F399A20723B722D000759320 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushSDKTester_EWP/Pods-PushSDKTester_EWP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -238,6 +351,18 @@
 				F395C4D32375A12A007355AC /* ViewController.swift in Sources */,
 				F395C4CF2375A12A007355AC /* AppDelegate.swift in Sources */,
 				F395C4D12375A12A007355AC /* SceneDelegate.swift in Sources */,
+				F399A21023B72C3900759320 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F399A1FB23B722D000759320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F399A1FC23B722D000759320 /* ViewController.swift in Sources */,
+				F399A1FD23B722D000759320 /* AppDelegate.swift in Sources */,
+				F399A1FE23B722D000759320 /* SceneDelegate.swift in Sources */,
+				F399A21123B72C4200759320 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,14 +515,25 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
 				INFOPLIST_FILE = PushSDKTester_EWP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = iotisys.pushsdk.iostester;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SDKTEST_OFFICE;
 				SWIFT_OBJC_BRIDGING_HEADER = "PushSDKTester_EWP/PushSDKTester_EWP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -418,14 +554,102 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
 				INFOPLIST_FILE = PushSDKTester_EWP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = iotisys.pushsdk.iostester;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SDKTEST_OFFICE;
+				SWIFT_OBJC_BRIDGING_HEADER = "PushSDKTester_EWP/PushSDKTester_EWP-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F399A20B23B722D000759320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F33CC339D47DB196B97634D /* Pods-PushSDKTester_EWP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PushSDKTester_EWP/PushSDKTester_EWP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJC4688N2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
+				INFOPLIST_FILE = "PushSDKTester_EWP copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "\"-DDISASTER\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "iotisys.pushsdk.iostester-disaster";
+				PRODUCT_NAME = SDKTEST_DISASTER;
+				SWIFT_OBJC_BRIDGING_HEADER = "PushSDKTester_EWP/PushSDKTester_EWP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F399A20C23B722D000759320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5956A18DDCB74F8E2006264C /* Pods-PushSDKTester_EWP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PushSDKTester_EWP/PushSDKTester_EWP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJC4688N2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
+				INFOPLIST_FILE = "PushSDKTester_EWP copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "\"-DDISASTER\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "iotisys.pushsdk.iostester-disaster";
+				PRODUCT_NAME = SDKTEST_DISASTER;
 				SWIFT_OBJC_BRIDGING_HEADER = "PushSDKTester_EWP/PushSDKTester_EWP-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,6 +673,15 @@
 			buildConfigurations = (
 				F395C4E02375A12C007355AC /* Debug */,
 				F395C4E12375A12C007355AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F399A20A23B722D000759320 /* Build configuration list for PBXNativeTarget "PushSDKTester_EWP_disaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F399A20B23B722D000759320 /* Debug */,
+				F399A20C23B722D000759320 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
