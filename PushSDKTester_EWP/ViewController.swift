@@ -46,6 +46,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         pushsdk = PushSDK_EWP()
 
         titleLabel.text = Constants.appTitle
+        idTextField.text = Constants.defaultID
+        ipTextField.text = Constants.ip
+        portTextField.text = Constants.port
+        messageIdTextField.text = Constants.messageId
         
         textFieldAssign()
         
@@ -74,12 +78,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     fileprivate func textFieldAssign() {
-        
-        idTextField.text = Constants.defaultID
-        ipTextField.text = Constants.ip
-        portTextField.text = Constants.port
-        messageIdTextField.text = Constants.messageId
-        
         id = idTextField.text
         ip = ipTextField.text
         port = Int(portTextField.text ?? "0")
