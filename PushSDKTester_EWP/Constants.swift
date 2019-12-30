@@ -11,7 +11,7 @@ import Foundation
 public class Constants {
     #if DISASTER
         static let appid = "iotisys.pushsdk.iostester-disaster"
-        static let authKey = "AIzaSyAxqkccCWq_mX8jbJqj0iDSbnKULY5oJnI"
+        static let authKey = "AAAApN-Gwy4:APA91bEBZdIhl3pdO4xPzIM3aVAiCh-Nbex9mjIVAkXwExChcKedgKEFjqyGTzGePWFsrP_w582nhUEa_zUgezB0XY71kFF046l8cXnrclq1qMCiGo4EFBlhRUm8sPCmOT1THaCaP21_"
     
         static let defaultID = "16170020"
         static let ip = "211.169.61.10"
@@ -21,7 +21,7 @@ public class Constants {
         static let appTitle = "재난"
     #else
         static let appid = "iotisys.pushsdk.iostester"
-        static let authKey = "AIzaSyAxqkccCWq_mX8jbJqj0iDSbnKULY5oJnI"
+        static let authKey = "AAAApN-Gwy4:APA91bEBZdIhl3pdO4xPzIM3aVAiCh-Nbex9mjIVAkXwExChcKedgKEFjqyGTzGePWFsrP_w582nhUEa_zUgezB0XY71kFF046l8cXnrclq1qMCiGo4EFBlhRUm8sPCmOT1THaCaP21_"
     
         static let defaultID = "16170020"
         static let ip = "211.169.61.10"
