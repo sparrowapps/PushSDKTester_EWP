@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iPIvIhjrB9zD7U4k1BmsbyScPWk=
+		A4/mN/TkpkjgGg/nMBypYm4e9I4=
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/arm.swiftmodule</key>
 		<data>
-		8/mhQhinxYmoLCh81ZUVTsT/BDY=
+		0opE55w0jbD+tVHmCoC9Race4JQ=
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qMLVa1u9nem8UcsjZatk8CT1vX8=
+		9kLocEEsC3DAVPesSeHWF1z2t0U=
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		qMLVa1u9nem8UcsjZatk8CT1vX8=
+		9kLocEEsC3DAVPesSeHWF1z2t0U=
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		8/mhQhinxYmoLCh81ZUVTsT/BDY=
+		0opE55w0jbD+tVHmCoC9Race4JQ=
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/PushSDK_EWP.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		8/mhQhinxYmoLCh81ZUVTsT/BDY=
+		0opE55w0jbD+tVHmCoC9Race4JQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,11 +100,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8/mhQhinxYmoLCh81ZUVTsT/BDY=
+			0opE55w0jbD+tVHmCoC9Race4JQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			N4d2Rp4MCmXuIR3IAcuFhukHyPkinc7xRP3qSUhNiG0=
+			zPvKFnEQuirla+VpFce7B0eBvHEDxQrxXXuz9MikqO4=
 			</data>
 		</dict>
 		<key>Modules/PushSDK_EWP.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -122,11 +122,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qMLVa1u9nem8UcsjZatk8CT1vX8=
+			9kLocEEsC3DAVPesSeHWF1z2t0U=
 			</data>
 			<key>hash2</key>
 			<data>
-			ut9YcRTbl+AF5f8Pz/fx2xQyfMbmp21IRusP1zC6mO4=
+			K8Lr3ilYCQ8KooiVhrkOWONH7Al98imbyTn0V8WUvwE=
 			</data>
 		</dict>
 		<key>Modules/PushSDK_EWP.swiftmodule/arm64.swiftdoc</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qMLVa1u9nem8UcsjZatk8CT1vX8=
+			9kLocEEsC3DAVPesSeHWF1z2t0U=
 			</data>
 			<key>hash2</key>
 			<data>
-			ut9YcRTbl+AF5f8Pz/fx2xQyfMbmp21IRusP1zC6mO4=
+			K8Lr3ilYCQ8KooiVhrkOWONH7Al98imbyTn0V8WUvwE=
 			</data>
 		</dict>
 		<key>Modules/PushSDK_EWP.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8/mhQhinxYmoLCh81ZUVTsT/BDY=
+			0opE55w0jbD+tVHmCoC9Race4JQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			N4d2Rp4MCmXuIR3IAcuFhukHyPkinc7xRP3qSUhNiG0=
+			zPvKFnEQuirla+VpFce7B0eBvHEDxQrxXXuz9MikqO4=
 			</data>
 		</dict>
 		<key>Modules/PushSDK_EWP.swiftmodule/armv7.swiftdoc</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8/mhQhinxYmoLCh81ZUVTsT/BDY=
+			0opE55w0jbD+tVHmCoC9Race4JQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			N4d2Rp4MCmXuIR3IAcuFhukHyPkinc7xRP3qSUhNiG0=
+			zPvKFnEQuirla+VpFce7B0eBvHEDxQrxXXuz9MikqO4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
