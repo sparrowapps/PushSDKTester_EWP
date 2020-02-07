@@ -43,7 +43,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
+        
         pushsdk = PushSDK_EWP()
+        pushsdk?.pushapiSetLogEnabled(on: true)
 
         titleLabel.text = Constants.appTitle
         idTextField.text = Constants.defaultID
@@ -52,6 +54,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         messageIdTextField.text = Constants.messageId
         
         textFieldAssign()
+        
+        
+        
         
         NotificationCenter.default.addObserver(self, selector: #selector(pushMessageReceive(_:)), name: NSNotification.Name("PushMessageReceive"), object: nil)
     }
